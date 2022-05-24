@@ -1,11 +1,10 @@
+import styles from './Frases.css'
+
 function Frases() {
-
-    return ( <
-        div >
-        <
-        p > Deus é fiel < /p> <
-        /div>
-    )
-
+    return (
+        <div className={styles.frasesContainer}>
+            <p> Deus é fiel </p>{" "}
+        </div>
+    );
 }
-export default Frases
+export default Frases;

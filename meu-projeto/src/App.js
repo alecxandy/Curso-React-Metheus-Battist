@@ -1,20 +1,24 @@
-import './App.css';
-import HelloWord from './components/helloWord';
+import "./App.css";
+import HelloWord from "./components/helloWord";
+import SyMyName from "./components/SyMyName";
+import Pessoa from "./components/Pessoa";
+import Frases from "./components/Frases";
+const nomeM = "Maria";
 
 function App() {
-    const nome = 'Alexandre'
-    const url = "https://via.placeholder.com/150"
-    return ( <
-        div className = "App" >
-        <
-        h1 > Hello app React < /h1> <
-        p > Olá meu nome é { nome } < /p> <
-        img src = { url }
-        alt = "Minha imagem" / >
-        <
-        HelloWord / >
-        <
-        /div>
+    return (
+        <div className="App">
+            <SyMyName nome="Alexandre" />
+            <Frases />
+            <Frases />
+            <HelloWord nome={nomeM} />{" "}
+            <Pessoa
+                nome="alex"
+                idade="33"
+                profissao="Programador"
+                foto="https://via.placeholder.com/150"
+            />
+        </div>
     );
 }
 
