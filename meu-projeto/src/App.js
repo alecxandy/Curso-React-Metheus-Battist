@@ -3,6 +3,7 @@ import HelloWord from "./components/helloWord";
 import SyMyName from "./components/SyMyName";
 import Pessoa from "./components/Pessoa";
 import Frases from "./components/Frases";
+import List from "./components/List";
 const nomeM = "Maria";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                 profissao="Programador"
                 foto="https://via.placeholder.com/150"
             />
+            <List />
         </div>
     );
 }
